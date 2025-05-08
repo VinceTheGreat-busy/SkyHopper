@@ -43,6 +43,7 @@ nav ul li {
     display: inline-block;
     list-style: none;
     padding: 20px;
+    box-shaodw: 0 4px 8px var(--shadow-color);
 }
 
 li a, button {
@@ -54,11 +55,14 @@ li a, button {
     border-radius: 25px;
     border: 1px;
     background-color: var(--secondary-color);
+    box-shaodw: 0 4px 8px var(--shadow-color);
 }
 
 li a:hover, button:hover {
     background-color: #bf3952;
     transition: linear 0.1s;
+    box-shaodw: 0 4px 8px var(--shadow-color);
+    transform: translate(0, -5px);
 }
 
 #cardLabel {
