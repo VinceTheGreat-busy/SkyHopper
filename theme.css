@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #e7d8c9;
+    --text-color: #000;
+    --base-color: #eee4e1;
+    --secondary-color: #e6beae;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.darkmode {
+    --main-color: #011526;
+    --text-color: #fff;
+    --base-color: #254559;
+    --secondary-color: #30588c;
+    --shadow-color: rgba(43, 98, 201, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}  
+
+body {
+    transition: background-color 0.1s ease-in-out;
+    background-color: var(--main-color);
+    color: black;
+}
+
+#head {
+    background-color: var(--base-color);
+    padding: 20px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+}
+
+li a, button {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    transition: ease-out 0.3s;
+    border-radius: 25px;
+    border: 1px;
+    background-color: var(--secondary-color);
+}
+
+li a:hover, button:hover {
+    background-color: #bf3952;
+    transition: linear 0.1s;
+}
+
+#cardLabel {
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 20px;
+}
